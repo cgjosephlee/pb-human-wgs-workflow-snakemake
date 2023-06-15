@@ -15,7 +15,7 @@ def check_header_for_basemod_tools(bams):
     for bam in bams:
         with pysam.AlignmentFile(bam, "rb", check_sq=False) as bamfile:
             # BAMs processed with basemod tools will have header PG ID
-            if {_['ID'] for _ in bamfile.header.as_dict()['PG']} & basemod_tools):
+            if ({_['ID'] for _ in bamfile.header.as_dict()['PG']} & basemod_tools):
                 return True
     return False
 
