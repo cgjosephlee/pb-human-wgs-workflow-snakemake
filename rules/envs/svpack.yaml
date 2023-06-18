@@ -1,6 +1,6 @@
 channels:
-  - bioconda
   - conda-forge
+  - bioconda
   - defaults
 dependencies:
   - pysam==0.16.0.1

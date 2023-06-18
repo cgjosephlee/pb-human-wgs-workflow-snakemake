@@ -1,6 +1,7 @@
 channels:
+  - conda-forge
   - bioconda
-  - anaconda
+  - defaults
 dependencies:
   - python=3
   - bedtools==2.27.1

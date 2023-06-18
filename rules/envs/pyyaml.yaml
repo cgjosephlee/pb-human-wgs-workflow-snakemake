@@ -1,5 +1,5 @@
 channels:
-  - anaconda
+  - conda-forge
 dependencies:
   - pyyaml==5.3.1
   - python=3

@@ -1,6 +1,7 @@
 channels:
+  - conda-forge
   - bioconda
-  - anaconda
+  - defaults
 dependencies:
-  - datamash==1.1.0
+  - datamash==1.2
   - bedtools==2.27.1
