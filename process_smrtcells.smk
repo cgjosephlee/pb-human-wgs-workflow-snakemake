@@ -15,12 +15,12 @@ ubam_pattern = re.compile(r'smrtcells/ready/(?P<sample>[A-Za-z0-9_-]+)/(?P<movie
 ubam_dict = defaultdict(dict)
 fastq_pattern = re.compile(r'smrtcells/ready/(?P<sample>[A-Za-z0-9_-]+)/(?P<movie>m\d{5}U?e?_\d{6}_\d{6}(_s[1234])?)\.fastq.gz')
 fastq_dict = defaultdict(dict)
-for infile in Path('smrtcells/ready').glob('**/*.bam'):
+for infile in Path('smrtcells/ready').glob('*/*.bam'):
     ubam_match = ubam_pattern.search(str(infile))
     if ubam_match:
         # create a dict-of-dict to link samples to movie context to uBAM filenames
         ubam_dict[ubam_match.group('sample')][ubam_match.group('movie')] = str(infile)
-for infile in Path('smrtcells/ready').glob('**/*.fastq.gz'):
+for infile in Path('smrtcells/ready').glob('*/*.fastq.gz'):
     fastq_match = fastq_pattern.search(str(infile))
     if fastq_match:
         # create a dict-of-dict to link samples to movie context to FASTQ filenames
