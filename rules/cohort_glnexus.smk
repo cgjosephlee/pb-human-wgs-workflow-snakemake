@@ -13,7 +13,7 @@ rule glnexus:
     params:
         mem_gbytes = 192,
     container: f"docker://ghcr.io/dnanexus-rnd/glnexus:{config['GLNEXUS_VERSION']}"
-    threads: 24
+    threads: 32
     shell:
         """
         (rm -rf {output.scratch_dir} && \

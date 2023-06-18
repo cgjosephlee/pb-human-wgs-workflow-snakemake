@@ -16,7 +16,7 @@ rule last_align:
     params: 
         last_index = config['ref']['last_index'],
         extra = "-C2"
-    threads: 24
+    threads: 28
     shell:
         """
         (samtools view -@3 -bL {input.bed} {input.bam} | samtools fasta \

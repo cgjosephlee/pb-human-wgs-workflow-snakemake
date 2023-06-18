@@ -15,7 +15,7 @@ rule trgt_genotype:
     conda: "envs/trgt.yaml"
     params:
         prefix = f"samples/{sample}/trgt/{sample}.{ref}.trgt"
-    threads: 32
+    threads: 28
     message: "Executing {rule}: Genotyping tandem repeat regions from {input.bed} in {input.bam}."
     shell:
         """

@@ -16,7 +16,7 @@ rule pbmm2_align_ubam:
         preset = "CCS",
         extra = "--sort --unmapped",
         loglevel = "INFO"
-    threads: 24
+    threads: 28
     conda: "envs/pbmm2.yaml"
     shell:
         """
@@ -46,7 +46,7 @@ rule pbmm2_align_fastq:
         preset = "CCS",
         extra = "--sort --unmapped",
         loglevel = "INFO"
-    threads: 24
+    threads: 28
     conda: "envs/pbmm2.yaml"
     shell:
         """

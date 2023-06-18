@@ -86,7 +86,7 @@ rule deepvariant_postprocess_variants:
     log: f"samples/{sample}/logs/deepvariant/postprocess_variants/{sample}.{ref}.log"
     benchmark: f"samples/{sample}/benchmarks/deepvariant/postprocess_variants/{sample}.{ref}.tsv"
     container: f"docker://google/deepvariant:{deepvariant_version}"
-    threads: 4
+    threads: 6
     resources: 
         extra = os.environ.get('DEEPVARIANT_AVX2_CONSTRAINT','')
     shell:

@@ -29,7 +29,7 @@ rule jellyfish_count:
         kmer_length = config['kmer_length'],
         size = 1000000000,
         extra = "--canonical --disk"
-    threads: 24
+    threads: 28
     conda: "envs/jellyfish.yaml"
     shell:
         """

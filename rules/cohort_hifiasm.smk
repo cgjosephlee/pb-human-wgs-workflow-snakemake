@@ -27,7 +27,7 @@ rule yak_count:
     log: f"cohorts/{cohort}/logs/yak/{{sample}}.yak.count.log"
     benchmark: f"cohorts/{cohort}/benchmarks/yak/{{sample}}.yak.tsv"
     conda: "envs/yak.yaml"
-    threads: 32
+    threads: 28
     shell: "(yak count -t {threads} -o {output} {input}) > {log} 2>&1"
 
 
@@ -60,7 +60,7 @@ rule hifiasm_assemble:
         parent1 = lambda wildcards: trio_dict[wildcards.sample]['parent1'],
         parent2 = lambda wildcards: trio_dict[wildcards.sample]['parent2'],
         extra = "-c1 -d1"
-    threads: 48
+    threads: 56
     shell:
             """
             (

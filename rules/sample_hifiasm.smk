@@ -40,7 +40,7 @@ rule hifiasm_assemble:
     benchmark: f"samples/{sample}/benchmarks/hifiasm.tsv"
     conda: "envs/hifiasm.yaml"
     params: prefix = f"samples/{sample}/hifiasm/{sample}.asm"
-    threads: 48
+    threads: 56
     shell: "(hifiasm -o {params.prefix} -t {threads} {input}) > {log} 2>&1"
 
 
