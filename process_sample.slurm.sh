@@ -33,4 +33,5 @@ snakemake \
     --config "sample='$SAMPLE'" \
     --nolock \
     --profile workflow/profiles/slurm \
-    --snakefile workflow/process_sample.smk
+    --snakefile workflow/process_sample.smk \
+    --singularity-args "-B /work"

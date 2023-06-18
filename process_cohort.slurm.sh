@@ -33,4 +33,5 @@ snakemake \
     --config "cohort='$COHORT'" \
     --nolock \
     --profile workflow/profiles/slurm \
-    --snakefile workflow/process_cohort.smk
+    --snakefile workflow/process_cohort.smk \
+    --singularity-args "-B /work"
