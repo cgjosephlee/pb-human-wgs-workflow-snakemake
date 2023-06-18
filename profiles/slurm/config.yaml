@@ -3,8 +3,8 @@ rerun-incomplete: true
 keep-going: true
 printshellcmds: true
 local-cores: 4
-max-threads: 256
-jobs: 500
+max-threads: 56
+jobs: 40
 max-jobs-per-second: 1
 use-conda: true
 conda-frontend: mamba
@@ -21,6 +21,6 @@ default-resources:
   - partition='$PARTITION'
   - tmpdir=system_tmpdir
   - threads=1
-  - mem_mb=8000*threads
+  - mem_mb=6000*threads
   - out='cluster_logs/slurm-%x-%j-%N.out'
   - extra=''
