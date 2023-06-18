@@ -16,7 +16,7 @@ ref:
   hprc_dv_gnotate: 'resources/slivar/hprc.deepvariant.glnexus.hg38.v1.zip'
   eee_vcf: 'resources/eee/EEE_SV-Pop_1.ALL.sites.20181204.vcf.gz'
   gnomadsv_vcf: 'resources/gnomadsv/nstd166.GRCh38.variant_call.vcf.gz'
-  hprc_pbsv_vcf: 'resources/hprc/hprc.GRCh38.pbsv.v.2.6.0-20210417.vcf.gz'
+  hprc_pbsv_vcf: 'resources/hprc/hprc.GRCh38.pbsv.vcf.gz'
   decode_vcf: 'resources/decode/ont_sv_high_confidence_SVs.sorted.vcf.gz'
   autosomes: ['chr1', 'chr2', 'chr3', 'chr4', 'chr5',
               'chr6', 'chr7', 'chr8', 'chr9', 'chr10',
