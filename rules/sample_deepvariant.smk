@@ -1,4 +1,4 @@
-localrules: deepvariant_bcftools_stats, deepvariant_bcftools_roh
+# localrules: deepvariant_bcftools_stats, deepvariant_bcftools_roh
 
 
 shards = [f"{x:05}" for x in range(config['N_SHARDS'])]

@@ -1,4 +1,4 @@
-localrules: slivar_svpack_tsv
+# localrules: slivar_svpack_tsv
 
 
 rule svpack_filter_annotated:

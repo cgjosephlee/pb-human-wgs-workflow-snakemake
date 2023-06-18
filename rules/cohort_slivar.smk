@@ -1,4 +1,4 @@
-localrules: slivar_tsv
+# localrules: slivar_tsv
 
 
 rule bcftools_norm:

@@ -1,4 +1,4 @@
-localrules: bcftools_concat_pbsv_vcf
+# localrules: bcftools_concat_pbsv_vcf
 
 
 rule pbsv_call:

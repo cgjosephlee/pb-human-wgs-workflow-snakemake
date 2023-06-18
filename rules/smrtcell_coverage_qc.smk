@@ -1,4 +1,4 @@
-localrules: infer_sex_from_coverage, calculate_m2_ratio, calculate_gc_coverage
+# localrules: infer_sex_from_coverage, calculate_m2_ratio, calculate_gc_coverage
 
 
 rule infer_sex_from_coverage:

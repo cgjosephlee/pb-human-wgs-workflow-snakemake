@@ -1,4 +1,4 @@
-localrules: bgzip_vcf, tabix_vcf, tabix_bcf, create_ped, calculate_phrank
+# localrules: bgzip_vcf, tabix_vcf, tabix_bcf, create_ped, calculate_phrank
 
 
 rule bgzip_vcf:

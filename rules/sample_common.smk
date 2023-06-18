@@ -1,4 +1,4 @@
-localrules: bgzip_vcf, tabix_vcf
+# localrules: bgzip_vcf, tabix_vcf
 
 
 rule bgzip_vcf:

@@ -1,4 +1,4 @@
-localrules: tandem_genotypes_absolute_count, tandem_genotypes_plot, tandem_repeat_coverage_dropouts
+# localrules: tandem_genotypes_absolute_count, tandem_genotypes_plot, tandem_repeat_coverage_dropouts
 
 
 rule last_align:

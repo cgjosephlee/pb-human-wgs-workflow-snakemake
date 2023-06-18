@@ -3,7 +3,7 @@ def list_svsigs(region):
     return [f"samples/{sample}/pbsv/svsig/{movie}.{ref}.{region}.svsig.gz" for movie in movies]
 
 
-localrules: bcftools_concat_pbsv_vcf
+# localrules: bcftools_concat_pbsv_vcf
 
 
 rule pbsv_discover:

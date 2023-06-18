@@ -1,4 +1,4 @@
-localrules: calculate_sample_gc_coverage
+# localrules: calculate_sample_gc_coverage
 
 
 rule calculate_sample_gc_coverage:

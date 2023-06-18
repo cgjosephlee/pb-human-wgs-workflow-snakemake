@@ -1,4 +1,4 @@
-localrules: whatshap_bcftools_concat
+# localrules: whatshap_bcftools_concat
 
 
 rule glnexus:

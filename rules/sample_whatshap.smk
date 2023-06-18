@@ -1,4 +1,4 @@
-localrules: split_deepvariant_vcf, whatshap_bcftools_concat
+# localrules: split_deepvariant_vcf, whatshap_bcftools_concat
 
 
 rule split_deepvariant_vcf:

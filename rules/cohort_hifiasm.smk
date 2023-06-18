@@ -1,5 +1,5 @@
 ruleorder: samtools_fasta > seqtk_fastq_to_fasta
-localrules: asm_stats, gfa2fa
+# localrules: asm_stats, gfa2fa
 
 
 rule samtools_fasta:
